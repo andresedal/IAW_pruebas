@@ -7,7 +7,7 @@
     <script src="js/prog.js"></script>
   </head>
   <body>
-    <h1> WEB 01</h1>
+	<h1> WEB 02 </h1>
     <pre>
       Ejecuta php -S localhost:9000
       visital con tu navegador
@@ -17,6 +17,5 @@
     <?php
       echo "Esto lo escribe <b>PHP</b>"
     ?>
-
   </body>
 </html>
