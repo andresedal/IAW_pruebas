@@ -1,7 +1,5 @@
- ____                            _          ___    ___        __
-|  _ \ _ __ ___  _   _  ___  ___| |_ ___   |_ _|  / \ \      / /
-| |_) | '__/ _ \| | | |/ _ \/ __| __/ _ \   | |  / _ \ \ /\ / / 
-|  __/| | | (_) | |_| |  __/ (__| || (_) |  | | / ___ \ V  V /  
-|_|   |_|  \___/ \__, |\___|\___|\__\___/  |___/_/   \_\_/\_/   
-                 |___/                                          
+# Prueba IAW (web + tutifruti)
+En el repositorio tendremos un grupo de 3 paginas web
 
+## Deploy.sh
+El escript configurará automaticamente las webs
