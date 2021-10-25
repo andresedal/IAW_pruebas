@@ -11,7 +11,8 @@ En el repositorio tendremos un grupo de 3 paginas web.
  /___,' \___| .__/|_|\___/ \__, |_| |_| |_|\___|_| |_|\__(_)___/_| |_|
             |_|            |___/
 </pre>
-El Script configurará automaticamente las webs.
+El Script configurará automaticamente las webs. Tiene en cuenta el usuario que la ejecuta.
+También hara "pull" antes de hacer nada, para tener los archivos actualizados.
 
 ## "Update.sh"
 Actualiza todos los archivos en el repositorio, y hara un commit
