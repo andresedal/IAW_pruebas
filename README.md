@@ -2,7 +2,7 @@
 # Prueba IAW (web + tutifruti)
 En el repositorio tendremos un grupo de 3 paginas web.
 
-## "Deploy.sh"
+## "Deployment.sh"
 <pre>
      ___           _                                  _         _
     /   \___ _ __ | | ___  _   _ _ __ ___   ___ _ __ | |_   ___| |__
