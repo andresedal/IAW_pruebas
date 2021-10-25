@@ -1,34 +1,27 @@
 #!/bin/bash
-echo "$(whoami)"
-
-[ "$UID" -eq 0 ] || exec sudo "$0" "$@"
-git pull
-
+clear
+su -c 'git pull' $(whoami)
 
 echo "Configurando espacios web"
-#1
-mkdir -p /var/www/web01
-chown -R usuario:www-data /var/www/web01
-#2
-mkdir -p /var/www/web02
-chown -R usuario:www-data /var/www/web02
-#3
-mkdir -p /var/www/web03
-chown -R usuario:www-data /var/www/web03
+
+sudo mkdir -p /var/www/web0{1,2,3}
 
 echo "Clonar directorio"
-# 1
-cp web01/config.conf /etc/apache2/sites-available/web01.conf
-cp web01 /var/www/web01
-# 2
-cp web02/web02.conf /etc/apache2/sites-available/web02.conf
-cp web02 /var/www/web02
-# 3
-cp web03/web03.conf /etc/apache2/sites-available/web03.conf
-cp web03 /var/www/web03
+
+sudo cp -r ./web01/web01.conf /etc/apache2/sites-available/web01.conf
+sudo cp -r ./web02/web02.conf /etc/apache2/sites-available/web02.conf
+sudo cp -r ./web03/web03.conf /etc/apache2/sites-available/web03.conf
+
+sudo cp -r ./web0{1,2,3} /var/www
+
+sudo rm -r -f /var/www/web01/web01.conf
+sudo rm -r -f /var/www/web01/web02.conf
+sudo rm -r -f /var/www/web01/web03.conf
+
+sudo chown -R $(whoami):www-data /var/www/web0{1,2,3}
 
 echo "Habilitando espacios web"
-# Habilitar sitios
-a2ensite web01.conf
-a2ensite web02.conf
-a2ensite web03.conf
+
+sudo a2ensite web0{1,2,3}.conf
+
+sudo systemctl reload apache2
