@@ -7,9 +7,12 @@
 		<script src="js/prog.js"></script>
 	</head>
 	<body>
-		<h1>
-			WEB 01
-		</h1>
+		<?php
+			echo 
+			"<h1>
+				WEB 01 CON FECHA date(string $format, ?int $timestamp = null): string
+			</h1>"
+		?>
 		<pre>
 			Ejecuta php -S localhost:9000
 			visital con tu navegador
