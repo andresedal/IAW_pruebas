@@ -10,8 +10,8 @@
 		<?php
 			echo 
 			"<h1>
-				WEB 02 CON FECHA date(string $format, ?int $timestamp = null): string
-			</h1>"
+				WEB 02 CON FECHA decho." date("Y/m/d") . "<br>";
+			"</h1>"
 		?>
 		<pre>
 			Ejecuta php -S localhost:9000
