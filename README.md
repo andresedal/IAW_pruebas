@@ -7,7 +7,7 @@ también teniendo en cuenta que en los ficheros de configuracion (de apache2) de
 el "ServerName" será <i>web0X.iaw.com</i>. Por ende yo he modificado mi fichero de hosts
 para que así apunte a la ip del servidor
 
-Algo así
+### /etc/hosts (Linux)
 <pre>
      192.168.56.10 web01.iaw.com
      192.168.56.10 web02.iaw.com
