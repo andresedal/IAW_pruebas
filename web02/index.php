@@ -8,10 +8,7 @@
 	</head>
 	<body>
 		<?php
-			echo 
-			"<h1>
-				WEB 02 CON FECHA decho." date("Y/m/d") . "<br>";
-			"</h1>"
+			echo "<h1> WEB 02 FECHA". date("Y/m/d")"</h1>";
 		?>
 		<pre>
 			Ejecuta php -S localhost:9000
