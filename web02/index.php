@@ -2,7 +2,7 @@
 <html lang="es" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<title>WEB 01</title>
+		<title>WEB 02</title>
 		<link rel="stylesheet" href="css/estilo.css">
 		<script src="js/prog.js"></script>
 	</head>

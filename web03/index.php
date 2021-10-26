@@ -2,17 +2,16 @@
 <html lang="es" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<title>WEB 01</title>
+		<title>WEB 03</title>
 		<link rel="stylesheet" href="css/estilo.css">
 		<script src="js/prog.js"></script>
 	</head>
 	<body>
-		<?php
-			echo 
-			"<h1>
-				WEB 03 CON FECHA date(string $format, ?int $timestamp = null): string
-			</h1>"
-		?>
+		<h1>
+			<?php
+				echo "WEB 03 FECHA ". date("Y/m/d");
+			?>
+		</h1>
 		<pre>
 			Ejecuta php -S localhost:9000
 			visital con tu navegador
