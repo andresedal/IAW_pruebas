@@ -9,7 +9,7 @@
 	<body>
 		<h1>
 			<?php
-				echo "WEB 02 FECHA". date("Y/m/d");
+				echo "WEB 02 FECHA ". date("Y/m/d");
 			?>
 		</h1>
 		<pre>
