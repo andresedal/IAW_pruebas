@@ -7,9 +7,11 @@
 		<script src="js/prog.js"></script>
 	</head>
 	<body>
-		<?php
-			echo "<h1> WEB 02 FECHA </h1>". date("Y/m/d");
-		?>
+		<h1>
+			<?php
+				echo "WEB 02 FECHA". date("Y/m/d");
+			?>
+		</h1>
 		<pre>
 			Ejecuta php -S localhost:9000
 			visital con tu navegador
