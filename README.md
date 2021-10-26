@@ -1,6 +1,18 @@
 
-# Prueba IAW (web + tutifruti)
+# Prueba IAW
 En el repositorio tendremos un grupo de 3 paginas web.
+
+He preparado el repositorio entorno a los tres directorios <b>"web0X"</b>,
+también teniendo en cuenta que en los ficheros de configuracion (de apache2) de las webs
+el "ServerName" será <i>web0X.iaw.com</i>. Por ende yo he modificado mi fichero de hosts
+para que así apunte a la ip del servidor
+
+Algo así
+<pre>
+     192.168.56.10 web01.iaw.com
+     192.168.56.10 web02.iaw.com
+     192.168.56.10 web03.iaw.com
+</pre>
 
 ## "Deployment.sh"
 <pre>
