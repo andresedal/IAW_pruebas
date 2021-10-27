@@ -15,45 +15,8 @@ para que así apunte a la ip del servidor
 </pre>
 
 ## "Deployment.sh"
-<pre>
-     ___           _                                  _         _
-    /   \___ _ __ | | ___  _   _ _ __ ___   ___ _ __ | |_   ___| |__
-   / /\ / _ \ '_ \| |/ _ \| | | | '_ ` _ \ / _ \ '_ \| __| / __| '_ \
-  / /_//  __/ |_) | | (_) | |_| | | | | | |  __/ | | | |_ _\__ \ | | |
- /___,' \___| .__/|_|\___/ \__, |_| |_| |_|\___|_| |_|\__(_)___/_| |_|
-            |_|            |___/
-</pre>
 El Script configurará automaticamente las webs. Tiene en cuenta el usuario que la ejecuta.
 También hara "pull" antes de hacer nada, para tener los archivos actualizados.
-<p>
-#### 0. Limpiar la pantalla <br>
-$ clear<br>
-#### 1. Actualizamos el repositorio<br>
-$ su -c 'git pull' $(whoami)<br>
-Explicacion<br>
-$ echo "Configurando espacios web"<br>
-#### 2. Creamos los directorios con la opción "-p" en caso de que nos falte alguna carpeta intermedia<br>
-$ sudo mkdir -p /var/www/web0{1,2,3}<br>
-#### Explicacion<br>
-$ echo "Clonar directorio"<br>
-#### 3. Copiamos las configuraciones en el directorio de configuraciones de apache<br>
-$ sudo cp -r ./web01/web01.conf /etc/apache2/sites-available/web01.conf<br>
-$ sudo cp -r ./web02/web02.conf /etc/apache2/sites-available/web02.conf<br>
-$ sudo cp -r ./web03/web03.conf /etc/apache2/sites-available/web03.conf<br>
-#### 4. Copiamos las carpetas de las webs en el directorio de las webs<br>
-$ sudo cp -r ./web0{1,2,3} /var/www<br>
-#### 5. Al estar la configuración implícita en las carpetas de las webs la borramos de las carpetas copiadas<br>
-$ sudo rm -r -f /var/www/web01/web01.conf<br>
-$ sudo rm -r -f /var/www/web01/web02.conf<br>
-$ sudo rm -r -f /var/www/web01/web03.conf<br>
-#### 6. Cambiamos el dueño de los archivos y directorios<br>
-$ sudo chown -R $(whoami):www-data /var/www/web0{1,2,3}<br>
-Expliacion<br>
-$ echo "Habilitando espacios web"<br>
-#### 7. Habilitamos los sitios web y recargamos apache<br>
-$ sudo a2ensite web0{1,2,3}.conf<br>
-$ sudo systemctl reload apache2<br>
-</p>
 
 ## "Update.sh"
 Actualiza todos los archivos en el repositorio, y hara un commit
