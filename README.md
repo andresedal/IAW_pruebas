@@ -25,7 +25,7 @@ para que así apunte a la ip del servidor
 </pre>
 El Script configurará automaticamente las webs. Tiene en cuenta el usuario que la ejecuta.
 También hara "pull" antes de hacer nada, para tener los archivos actualizados.
-
+<p>
 #### 0. Limpiar la pantalla <br>
 $ clear<br>
 #### 1. Actualizamos el repositorio<br>
@@ -53,7 +53,7 @@ $ echo "Habilitando espacios web"<br>
 #### 7. Habilitamos los sitios web y recargamos apache<br>
 $ sudo a2ensite web0{1,2,3}.conf<br>
 $ sudo systemctl reload apache2<br>
-
+</p>
 
 ## "Update.sh"
 Actualiza todos los archivos en el repositorio, y hara un commit
