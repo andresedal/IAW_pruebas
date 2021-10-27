@@ -10,6 +10,7 @@
 		<h1>
 			<?php
 				echo "WEB 03 FECHA ". date("Y/m/d");
+				echo "Pagina de ISMAEL CASTELLANOS"
 			?>
 		</h1>
 		<pre>
