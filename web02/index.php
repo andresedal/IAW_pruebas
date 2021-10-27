@@ -23,8 +23,8 @@
 			Esto es un párrafo
 		</p>
 		<?php
-			echo "Esto lo escribe <b>PHP</b>"
-			echo "Version <i>1.0</i>" . date("Ymd");
+			echo "Esto lo escribe <b>PHP</b>";
+			echo "Version <i>1.0.</i> en " . date("Ymd");
 		?>
 	</body>
 </html>
