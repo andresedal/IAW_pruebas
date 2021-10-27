@@ -24,6 +24,7 @@
 		</p>
 		<?php
 			echo "Esto lo escribe <b>PHP</b>"
+			echo "Version <i>1.0</i>" . date("Ymd");
 		?>
 	</body>
 </html>
