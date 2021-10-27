@@ -9,9 +9,9 @@ para que así apunte a la ip del servidor
 
 ### /etc/hosts (Linux)
 <pre>
-     192.168.56.10 web01.iaw.com
-     192.168.56.10 web02.iaw.com
-     192.168.56.10 web03.iaw.com
+192.168.56.10 web01.iaw.com
+192.168.56.10 web02.iaw.com
+192.168.56.10 web03.iaw.com
 </pre>
 
 ## "Deployment.sh"
