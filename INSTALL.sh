@@ -13,14 +13,14 @@ elif [ $LOCAL = $BASE ]; then
     echo -e "\e[41mNecesita actualizar en local\e[0m"
     git pull
 elif [ $REMOTE = $BASE ]; then
-    echo "\e[43mNecesita actualizar en remoto\e[0m"
+    echo -e "\e[43mNecesita actualizar en remoto\e[0m"
 else
     echo "Diverged"
 fi
 echo " "
 # MENU 
 PS3='Seleccionar una opción: '
-options=("Listar Usuarios" "Crear Usuarios" "Borrar Usuarios" "Opciones repositorio" "salir")
+options=("Listar Usuarios" "Crear Usuarios" "Borrar Usuarios" "Actualizar repositorio" "salir")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -37,6 +37,7 @@ do
             echo "$opt"
             ;;
         "Actualizar repositorio")
+            echo "$opt"
             git pull
             ;;
         "salir")
