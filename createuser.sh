@@ -8,10 +8,9 @@ pswd="$psw1""$psw2""$RANDOM"
 
 echo "Contraseña auto generada ${pswd:0:1}*******${pswd:12:15}"
 echo $pswd
-# adduser
-
-# mkdir /var/www/$nombreunico/{web,blog,files}
-# chown root:root /var/www/$nombreunico
-# chown $nombreunico:$nombreunico /var/www/$nombreunico/*
-# chmod -R 755 /var/www/
+adduser
+mkdir /var/www/$nombreunico/{web,blog,files}
+chown root:root /var/www/$nombreunico
+chown $nombreunico:$nombreunico /var/www/$nombreunico/*
+chmod -R 755 /var/www/
 
