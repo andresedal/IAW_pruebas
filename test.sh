@@ -1,11 +1,17 @@
 #!/bin/bash
-echo "
-1
-2
-3
-4 salir
-"
-read option
-if [ $option == 1 ]; then
-break
+clear
+echo "Di algo"
+read prueba
+
+if [ 3 -gt $prueba ]; then
+    echo "true"
+    # ip a
+elif [ 3 -lt $prueba ]; then
+    echo "false"
+    # users
+else
+    echo "igual"
+    # cat /etc/passwd
+    fechaahora=$(date)
+    echo $fechaahora
 fi
