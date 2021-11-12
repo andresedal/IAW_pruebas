@@ -27,7 +27,7 @@ do
         "Listar Usuarios")
             echo -e "\e[31m$opt\e[0m"
             echo "==================="
-            awk -F: '{if($3 >= 1000 && $3 < 65534) {print "("$3")>"$1}}' /etc/passwd
+            awk -F: '{if($3 >= 1000 && $3 < 65534) {print "("$3")> "$1}}' /etc/passwd
             echo "==================="
             ;;
         "Crear Usuarios")
