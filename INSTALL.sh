@@ -8,12 +8,12 @@ REMOTE=$(git rev-parse "$UPSTREAM")
 BASE=$(git merge-base @ "$UPSTREAM")
 
 if [ $LOCAL = $REMOTE ]; then
-    echo -e "\e[42mActualizado\e[0m"
+    echo -e "\e[32mActualizado\e[0m"
 elif [ $LOCAL = $BASE ]; then
-    echo -e "\e[41mNecesita actualizar en local\e[0m"
+    echo -e "\e[31mNecesita actualizar en local\e[0m"
     git pull
 elif [ $REMOTE = $BASE ]; then
-    echo -e "\e[43mNecesita actualizar en remoto\e[0m"
+    echo -e "\e[33mNecesita actualizar en remoto\e[0m"
 else
     echo "Diverged"
 fi
