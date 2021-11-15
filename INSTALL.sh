@@ -20,7 +20,7 @@ fi
 echo " "
 # MENU 
 PS3='Seleccionar una opción: '
-options=("Listar Usuarios" "Crear Usuarios" "Borrar Usuarios" "Actualizar repositorio" "salir")
+options=("Listar Usuarios" "Crear Usuarios" "Borrar Usuarios" "Actualizar repositorio" "Mandar crede" "salir")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -31,14 +31,18 @@ do
             echo "==================="
             ;;
         "Crear Usuarios")
-            echo "$opt"
+            echo -e "\e[31m$opt\e[0m"
+            ./createuser.sh
             ;;
         "Borrar Usuarios")
-            echo "$opt"
+            echo -e "\e[31m$opt\e[0m"
             ;;
         "Actualizar repositorio")
-            echo "$opt"
+            echo -e "\e[31m$opt\e[0m"
             git pull
+            ;;
+        "Mandar credenciales")
+            echo -e "\e[31m$opt\e[0m"
             ;;
         "salir")
             break
