@@ -12,7 +12,7 @@ echo "Contraseña auto generada ${pswd:0:1}*******${pswd:12:13}"
 # CREAR USUARIO
 adduser --gecos "$nombrecompleto" --no-create-home --home /var/www/$nombreunico --shell /bin/false $nombreunico
 # CREAR DIRECTORIOS DE USUARIO
-mkdir /var/www/$nombreunico/{web,blog,files}
+mkdir -p /var/www/$nombreunico/{web,blog,files}
 # PERMISOS Y CHROOT
 chown root:root /var/www/$nombreunico
 chmod 755 /var/www/
